@@ -1,0 +1,126 @@
+body {
+    background: #ebebeb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-top {
+    background-color: #ffffff;
+    color:  #67533a;
+    font-size: 20px;
+    
+}
+
+.nav-top:hover{
+    background-color: #ffffff;
+    color:  #7db121;
+}
+
+.active-nav-top {
+    color: #7db121;
+    font-weight: bold;
+}
+
+.active-nav-top:hover {
+    color: #7db121;
+    font-weight: bold;
+}
+
+.nav-active-button {
+    background: #ffffff;
+    border-width: 0;
+    border-radius: 3px;
+    color:#7db121;
+    box-shadow: none;
+    
+}
+
+.carousel-item {
+    text-align: center
+  }
+
+  .carousel-caption {
+      background-color: rgba(222, 211, 183, 0.3);
+    
+      
+      
+  }
+
+
+  .nav-bottom-1 {
+    background-color:#ded3b7
+;
+    color:#67533a;
+    font-size: x-small;
+
+}
+
+.nav-bottom-1 div span {
+    
+    color:#67533a;
+    font-size: small;
+
+}
+
+.logo-social {
+    height: 30px;
+    width: 30px;
+}
+
+.social:hover{
+    cursor: pointer;
+}
+
+
+
+
+.nav-bottom-2 {
+    background-color:#786046;
+    color:#ffffff;
+    font-size: x-small;
+
+}
+
+.nav-bottom-2 div span {
+    
+    color:#deb666;
+    font-size: small;
+
+}
+
+.img-carousel {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+    object-position: 50% 50%;
+}
+
+.articles-border {
+    border-style: solid;
+    border-width: 13px 0px 0px 0px;
+    -moz-border-image: url(pngjoy.com_paw-26-jan-cat-paw-png-cat-paw_12041131.png) 1000 0 0 0 round round;
+    -webkit-border-image: url(pngjoy.com_paw-26-jan-cat-paw-png-cat-paw_12041131.png) 1000 0 0 0 round round;
+    -o-border-image: url(pngjoy.com_paw-26-jan-cat-paw-png-cat-paw_12041131.png) 1000 0 0 0 round round;
+    border-image: url(pngjoy.com_paw-26-jan-cat-paw-png-cat-paw_12041131.png) 1000 0 0 0 round round;
+}
+
+.articles {
+    color: #786046;
+}
+
+.card-image {
+    width:100px;
+  height:100px;
+  object-fit:cover;
+}
+
+.card-title {
+    font-size: small;
+    font-weight: bold;
+    color:#7db121;
+}
+
+.card-text {
+    font-size:x-small;
+    
+    color:black;
+}

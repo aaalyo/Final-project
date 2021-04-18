@@ -6,7 +6,7 @@ body {
 .nav-top {
     background-color: #ffffff;
     color:  #67533a;
-    font-size: 20px;
+    font-size: 15px;
     
 }
 
@@ -86,6 +86,14 @@ body {
     font-size: small;
 
 }
+
+.carousel-inner {
+    max-height: 400px;
+
+}
+
+
+
 
 .img-carousel {
     width: 100%;

@@ -5,3 +5,4 @@ $('.card-title:nth(1)').load('https://aaalyo.github.io/Final-project/cole-marmal
 
 $('.card-title:last').load('https://aaalyo.github.io/Final-project/hamilton.html h6');
 
+$('.card-text:first').load('https://aaalyo.github.io/Final-project/bob.html p');

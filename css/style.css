@@ -106,6 +106,10 @@ body {
     color: #786046;
 }
 
+.header {
+    color:#7db121;
+}
+
 .main-image {
     width:312px;
   height:312px;
@@ -127,10 +131,11 @@ body {
 }
 
 .card-title {
-    font-size: small;
-    font-weight: bold;
-    color:#7db121;
+    font-size: small !important;
+    font-weight: bold !important;
+    color:#7db121 !important;
 }
+
 
 .card-text {
     font-size:x-small;

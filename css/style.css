@@ -139,6 +139,11 @@ body {
 
 .card-text {
     font-size:x-small;
-    
     color:black;
+    height:100px;
+    
+        overflow:hidden;
+        text-overflow:ellipsis;
+
+    
 }

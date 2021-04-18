@@ -140,10 +140,18 @@ body {
 .card-text {
     font-size:x-small;
     color:black;
-    height:100px;
+    height: 100px;
     
         overflow:hidden;
         text-overflow:ellipsis;
-
-    
+   
 }
+
+.username-label {
+    
+    margin-top: 3px;
+    
+    
+    color:#7db121;
+}
+

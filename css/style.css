@@ -127,8 +127,17 @@ body {
   height:100px;
   object-fit:cover;
   margin:3px;
-  
 }
+
+.article-col {
+    max-width: 106px;
+    max-height: 106px;
+}
+.article-row {
+    
+    max-height: 106px;
+}
+
 
 .card-title {
     font-size: small !important;
@@ -147,11 +156,13 @@ body {
    
 }
 
-.username-label {
+.chat-label {
     
     margin-top: 3px;
     
     
     color:#7db121;
 }
+
+
 

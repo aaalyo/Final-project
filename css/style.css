@@ -106,10 +106,24 @@ body {
     color: #786046;
 }
 
+.main-image {
+    width:312px;
+  height:312px;
+  object-fit:cover;
+  margin-bottom: 3px;
+}
+
+.card-image-col {
+ width:106px;
+  height:106px;
+}
+
 .card-image {
     width:100px;
   height:100px;
   object-fit:cover;
+  margin:3px;
+  
 }
 
 .card-title {

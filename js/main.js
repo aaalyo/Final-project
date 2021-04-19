@@ -38,6 +38,12 @@ $('.chat-send').click(function (event) {
     event.preventDefault();
     const username = $('#username').val();
     const message = $('#message').val();
+    let date = new Date();
+    let options = {
+        weekday: "long", year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit"
+    };
+    
+
    
 
     if (username === '') {
@@ -52,7 +58,7 @@ $('.chat-send').click(function (event) {
     const newListElement = `
     <li class="chat-message alert alert-warning p-1 mt-3 me-3"> 
      <span class="card-title m-0">${username}</span> 
-     <span class="card-text text-secondary" id="datetime">at ${Date($.now())}</span>
+     <span class="card-text text-secondary" id="datetime">at ${date.toLocaleString(options)}</span>
      <p class="text-break m-0">${message}</p>  
     </li>`;
 

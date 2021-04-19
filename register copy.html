@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chat</title>
+  <title>Register</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
@@ -20,27 +20,27 @@
         <nav class="navbar  nav-top">
           <div class="col-12 col-lg-1 nav-top">
             <a class="navbar-brand ms-3" href="./index.html">
-              <img src="Images/logo-4.png" alt=""  height="50">
+              <img src="Images/logo-4.png" alt="" height="50">
             </a>
           </div>
           <div class="col-12 col-lg-5 nav-top">
             <a class="navbar-brand" href="./index.html">
-              <img src="Images/logo-2.png" alt=""  height="50">
+              <img src="Images/logo-2.png" alt="" height="50">
             </a>
           </div>
           <div class="col-12 col-lg-6 nav-top">
             <ul class="nav justify-content-end">
               <li class="nav-item">
-                <a class="nav-link nav-top"  href="./index.html"> Home</a>
+                <a class="nav-link nav-top" href="./index.html"> Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-top" href="./articles.html">Articles</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active active-nav-top " aria-current="page" href="./chat.html">Chat</a>
+                <a class="nav-link nav-top " href="./chat.html">Chat</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-top" href="./register.html">Register</a>
+                <a class="nav-link active active-nav-top" aria-current="page" href="./register.html">Register</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-top" href="./about.html">About us</a>
@@ -49,106 +49,58 @@
           </div>
         </nav>
       </div>
-      
+
     </div>
 
     <div class="row container d-flex flex-column align-content-center m-3">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Chat</li>
+          <li class="breadcrumb-item active" aria-current="page">Login</li>
         </ol>
       </nav>
-
     </div>
-
-
-    <div class="row m-3 p-0 ">
-
-      <div class="col-12 m-0 p-0 header">
+    <div class="row container m-3 p-0 position-relative min-h-100">
+      <div class="col-12 m-0 p-0 header position-absolute top-0 start-50">
         <p class="m-0 p-0">
-          Chat
-        </p> 
+          Register
+        </p>
       </div>
-
-      <div class="col-12 p-0 m-0"
-        style="background-color:white; width: 100%; overflow-y: scroll; border: solid 1px; height: 30vh;">
-
-        <div class="ms-3  scroll" data-bs-offset="0" tabindex="0">
-          <ul style="list-style: none;" class="chat-field p-0">
-
-          </ul>
-
-        </div>
-
-      </div>
-      <div class="col-12 m-0 p-0">
-        <form>
+      <div class="col-12 m-0 p-0 position-absolute top-50 start-50">
+        <form action="">
           <div>
-            <div class="chat-label">
-              <label  for="username">Username:</label>
-            </div>
-            <div>
-              <input type="text" id="username">
-            </div>
+            <input placeholder="Username *" type="text">
           </div>
           <div>
-            <div class="chat-label">
-              <label for="message">Message:</label>
-            </div>
-            <div>
-              <textarea name="message" id="message" cols="40" rows="2"></textarea>
-            </div>
+            <input placeholder="Password *" type="text">
           </div>
           <div>
-            <input class="chat-send btn btn-primary" type="submit" value="Send">
+            <input placeholder="Retype password *" type="text">
           </div>
+          <div>
+            <input placeholder="First name *" type="text">
+          </div>
+          <div>
+            <input placeholder="Last name" type="text">
+          </div>
+          <div>
+            <select name="country" id="country">
+              <option value="">Country *</option>
+              <option value="LV">Latvia</option>
+              <option value="LT">Lithuania</option>
+              <option value="EST">Estonia</option>
+            </select>
+    
+            
+    
+    
+    
+    
         </form>
       </div>
     </div>
-
-
-    <div class="row m-0 p-0 mt-auto">
-      <div class="row m-0 p-0 mt-auto">
-        <nav class="navbar nav-bottom-1 mt-3 ">
-          <div class="container-fluid justify-content-end">
-            <div class="row ">
-              <div class="col">
-                <a href="https://facebook.com/aaalyo">
-                  <img src="css/facebook.png" alt="" class="logo-social">
-                </a>
-              </div>
-              <div class="col">
-                <a href="https://instagram.com/aaalyo">
-                  <img src="css/insta.png" alt="" class="logo-social">
-                </a>
-              </div>
-              <div class="col social">
-                <a href="https://twitter.com/aaalyo">
-                  <img src="css/twitter.png" alt="" class="logo-social">
-                </a>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
-      <nav class="navbar nav-bottom-2 mt-0 ">
-        <div class="container-fluid">
-          <span class="navbar-brand mb-0"> Copyright &copy; 2021. MFCA - Most Famous Cats Association.</span>
-        </div>
-      </nav>
-    </div>
-
+    
   </div>
-
-  </div>
-
-
-
-
-
-
-
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

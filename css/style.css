@@ -213,4 +213,20 @@ body {
 }
 
 
+.btn-primary {
+    background-color: #7db121;
+    border-color: #7db121;
+}
+
+.btn-primary:hover {
+    background-color: #98d82a;
+    border-color: #7db121;
+}
+
+.btn-primary:focus {
+    background-color: #98d82a;
+    border-color: #7db121;
+    box-shadow: #deb666;
+}
+
 

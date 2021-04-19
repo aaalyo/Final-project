@@ -38,6 +38,8 @@ $('.chat-send').click(function (event) {
     event.preventDefault();
     const username = $('#username').val();
     const message = $('#message').val();
+   
+
     if (username === '') {
         alert('Please enter your name');
         return;
@@ -46,19 +48,77 @@ $('.chat-send').click(function (event) {
         alert('Please enter your message');
         return;
     };
-    
+
     const newListElement = `
-    <li> 
-     <span class="card-title">${username}</span> 
-     <span class="card-text">${message}</span>  
+    <li class="chat-message alert alert-warning p-1 mt-3 me-3"> 
+     <span class="card-title m-0">${username}</span> 
+     <span class="card-text text-secondary" id="datetime">at ${Date($.now())}</span>
+     <p class="text-break m-0">${message}</p>  
     </li>`;
 
-$('.chat-field').append(newListElement);
-$('#username').val('');
-$('#message').val('');
+
+
+    $('.chat-field').append(newListElement);
+    $('#username').val('');
+    $('#message').val('');
+
 
 
 });
+
+
+
+
+
+$('#register').submit(function (event) {
+
+    if ($('#username').val() === '') {
+
+        $('.please-enter').html('Please enter username!');
+        event.preventDefault();
+    };
+
+    if ($('#password1').val() === '') {
+
+        $('.please-enter').html('Please enter password!');
+        event.preventDefault();
+    };
+
+    if ($('#password2').val() === '') {
+
+        $('.please-enter').html('Please retype password!');
+        event.preventDefault();
+    };
+
+    if ($('#password1').val() !== $('#password2').val()) {
+
+        $('.please-enter').html('Passwords do not match!');
+        event.preventDefault();
+    };
+
+    if ($('#fname').val() === '') {
+
+        $('.please-enter').html('Please enter your name!');
+        event.preventDefault();
+    };
+
+    if ($('#country-select').val() === '') {
+
+        $('.please-enter').html('Please please select country!');
+        event.preventDefault();
+    };
+
+    if ($('#checkbox:checked').length === 0) {
+
+        $('.please-enter').html('Please read the terms and conditions!');
+        event.preventDefault();
+    };
+
+
+
+
+})
+
 
 
 

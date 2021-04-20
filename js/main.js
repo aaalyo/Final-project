@@ -1,4 +1,8 @@
 
+$('.card-image:first').load('https://aaalyo.github.io/Final-project/bob.html img.card-image');
+
+
+
 $('.card-title:first').load('https://aaalyo.github.io/Final-project/bob.html li.active');
 $('.card-title:nth(1)').load('https://aaalyo.github.io/Final-project/cole-marmalade.html li.active');
 $('.card-title:last').load('https://aaalyo.github.io/Final-project/hamilton.html li.active');
@@ -39,6 +43,15 @@ $('.carousel-caption.colonel-meow').load('https://aaalyo.github.io/Final-project
 $('.carousel-caption.orangey').load('https://aaalyo.github.io/Final-project/orangey.html h6');
 
 $('.bob-carousel').load('https://aaalyo.github.io/Final-project/bob.html img.main-image');
+$('.cole-marmalade-carousel').load('https://aaalyo.github.io/Final-project/cole-marmalade.html img.main-image');
+$('.grumpy-carousel').load('https://aaalyo.github.io/Final-project/grumpy.html img.main-image');
+$('.hamilton-carousel').load('https://aaalyo.github.io/Final-project/hamilton.html img.main-image');
+$('.lil-bub-carousel').load('https://aaalyo.github.io/Final-project/lil-bub.html img.main-image');
+$('.maru-carousel').load('https://aaalyo.github.io/Final-project/maru.html img.main-image');
+$('.garfi-carousel').load('https://aaalyo.github.io/Final-project/garfi.html img.main-image');
+$('.nala-carousel').load('https://aaalyo.github.io/Final-project/nala.html img.main-image');
+$('.colonel-meow-carousel').load('https://aaalyo.github.io/Final-project/colonel-meow.html img.main-image');
+$('.orangey-carousel').load('https://aaalyo.github.io/Final-project/orangey.html img.main-image');
 
 
 

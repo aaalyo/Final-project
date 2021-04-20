@@ -101,9 +101,11 @@ var aDay = 24 * 60 * 60 * 1000;
 console.log(timeSince(new Date(Date.now() - aDay)));
 console.log(timeSince(new Date(Date.now() - aDay * 2)));
 
-$('.date-loaded-card-1').load('https://aaalyo.github.io/Final-project/bob.html h5');
-date1 = $('.date-loaded-card-1').html();
+$('.date-updated-card-1').load('https://aaalyo.github.io/Final-project/bob.html h5');
+date1 = $('.date-updated-card-1').html();
 $('.text-muted-card-1').html(timeSince(date1) + ' ago');
+console.log(timeSince(date1))
+
 
 $('.date-loaded-card-2').load('https://aaalyo.github.io/Final-project/cole-marmalade.html h5');
 date2 = $('.date-loaded-card-2').html();

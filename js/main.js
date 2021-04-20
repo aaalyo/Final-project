@@ -28,6 +28,18 @@ $('.card-text-pg-3:last').load('https://aaalyo.github.io/Final-project/nala.html
 $('.card-text-pg-4:first').load('https://aaalyo.github.io/Final-project/orangey.html p');
 
 $('.carousel-caption.bob').load('https://aaalyo.github.io/Final-project/bob.html h6');
+$('.carousel-caption.cole-marmalade').load('https://aaalyo.github.io/Final-project/cole-marmalade.html h6');
+$('.carousel-caption.grumpy').load('https://aaalyo.github.io/Final-project/grumpy.html h6');
+$('.carousel-caption.hamilton').load('https://aaalyo.github.io/Final-project/hamilton.html h6');
+$('.carousel-caption.lil-bub').load('https://aaalyo.github.io/Final-project/lil-bub.html h6');
+$('.carousel-caption.maru').load('https://aaalyo.github.io/Final-project/maru.html h6');
+$('.carousel-caption.garfi').load('https://aaalyo.github.io/Final-project/garfi.html h6');
+$('.carousel-caption.nala').load('https://aaalyo.github.io/Final-project/nala.html h6');
+$('.carousel-caption.colonel-meow').load('https://aaalyo.github.io/Final-project/colonel-meow.html h6');
+$('.carousel-caption.orangey').load('https://aaalyo.github.io/Final-project/orangey.html h6');
+
+
+
 
 
 $('.chat-send').click(function (event) {

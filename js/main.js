@@ -69,38 +69,49 @@ $('#register').submit(function (event) {
 
 
 function timeSince(date) {
-date = $('.date-updated').html();
-console.log(date);
-    var seconds = Math.floor((new Date() - date) / 1000);
     
-  
+    var seconds = Math.floor((new Date() - date) / 1000);
+
+
     var interval = seconds / 31536000;
-  
+
     if (interval > 1) {
-      return Math.floor(interval) + " years";
+        return Math.floor(interval) + " years";
     }
     interval = seconds / 2592000;
     if (interval > 1) {
-      return Math.floor(interval) + " months";
+        return Math.floor(interval) + " months";
     }
     interval = seconds / 86400;
     if (interval > 1) {
-      return Math.floor(interval) + " days";
+        return Math.floor(interval) + " days";
     }
     interval = seconds / 3600;
     if (interval > 1) {
-      return Math.floor(interval) + " hours";
+        return Math.floor(interval) + " hours";
     }
     interval = seconds / 60;
     if (interval > 1) {
-      return Math.floor(interval) + " minutes";
+        return Math.floor(interval) + " minutes";
     }
     return Math.floor(seconds) + " seconds";
-  }
-  var aDay = 24*60*60*1000;
-  console.log(timeSince(new Date(Date.now()-aDay)));
-  console.log(timeSince(new Date(Date.now()-aDay*2)));
-  $('.text-muted').html(timeSince(new Date(Date.now()-aDay*2)) + ' ago');
+}
+
+var aDay = 24 * 60 * 60 * 1000;
+console.log(timeSince(new Date(Date.now() - aDay)));
+console.log(timeSince(new Date(Date.now() - aDay * 2)));
+
+$('.date-loaded-card-1').load('https://aaalyo.github.io/Final-project/bob.html h5');
+date1 = $('.date-loaded-card-1').html();
+$('.text-muted-card-1').html(timeSince(date1) + ' ago');
+
+$('.date-loaded-card-2').load('https://aaalyo.github.io/Final-project/cole-marmalade.html h5');
+date2 = $('.date-loaded-card-2').html();
+$('.text-muted-card-2').html(timeSince(date2) + ' ago');
+
+$('.date-loaded-card-3').load('https://aaalyo.github.io/Final-project/hamilton.html h5');
+date3 = $('.date-loaded-card-3').html();
+$('.text-muted-card-3').html(timeSince(date3) + ' ago');
 
 
 

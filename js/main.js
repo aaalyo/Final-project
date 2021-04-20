@@ -1,5 +1,5 @@
 
-$('.card-image:first').load('https://aaalyo.github.io/Final-project/bob.html img.card-image');
+$('.card-image:first').load('https://aaalyo.github.io/Final-project/bob.html img.card-image.load');
 
 
 

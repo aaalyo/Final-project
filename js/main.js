@@ -27,6 +27,8 @@ $('.card-text-pg-3:last').load('https://aaalyo.github.io/Final-project/nala.html
 
 $('.card-text-pg-4:first').load('https://aaalyo.github.io/Final-project/orangey.html p');
 
+$('.carousel-caption.bob').load('https://aaalyo.github.io/Final-project/bob.html h6');
+
 
 $('.chat-send').click(function (event) {
     event.preventDefault();

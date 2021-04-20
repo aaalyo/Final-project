@@ -1,5 +1,7 @@
 
-$('.card-image:first').load('https://aaalyo.github.io/Final-project/bob.html img.card-image.load');
+$('.card-image:first').load('https://aaalyo.github.io/Final-project/bob.html img.load');
+$('.card-image:nth(1)').load('https://aaalyo.github.io/Final-project/cole-marmalade.html img.load');
+$('.card-image:last').load('https://aaalyo.github.io/Final-project/hamilton.html img.load');
 
 
 
@@ -130,19 +132,25 @@ var aDay = 24 * 60 * 60 * 1000;
 
 $('.date-loaded-card-1').load('https://aaalyo.github.io/Final-project/bob.html h5', function() {
     date1 = $('.date-updated-card-1').html();
-    console.log(date1);
     $('.text-muted-card-1').html('Last updated ' + timeSince(date1) + ' ago');
 });
 
 $('.date-loaded-card-2').load('https://aaalyo.github.io/Final-project/cole-marmalade.html h5', function() {
-    date2 = $('.date-updated-card-2').html();
-    console.log(date2);
+    date2 = $('.date-updated-card-2').html();    
     $('.text-muted-card-2').html('Last updated ' + timeSince(date2) + ' ago');
 });
 
 $('.date-loaded-card-3').load('https://aaalyo.github.io/Final-project/hamilton.html h5', function() {
-    date3 = $('.date-updated-card-3').html();
-    console.log(date3);
+    date3 = $('.date-updated-card-3').html();    
     $('.text-muted-card-3').html('Last updated ' + timeSince(date3) + ' ago');
 });
 
+
+
+function myMap() {
+    var mapProp = {
+        center: new google.maps.LatLng(56.959514, 24.239138),
+        zoom: 17,
+    };
+    map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}

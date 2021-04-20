@@ -38,6 +38,8 @@ $('.carousel-caption.nala').load('https://aaalyo.github.io/Final-project/nala.ht
 $('.carousel-caption.colonel-meow').load('https://aaalyo.github.io/Final-project/colonel-meow.html h6');
 $('.carousel-caption.orangey').load('https://aaalyo.github.io/Final-project/orangey.html h6');
 
+$('.bob-carousel').load('https://aaalyo.github.io/Final-project/bob.html img.main-image');
+
 
 
 

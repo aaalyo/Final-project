@@ -139,28 +139,32 @@ body {
 }
 
 
-.card-title {
-    font-size: small !important;
-    font-weight: bold !important;
-    color:#7db121 !important;
+.card-title li{
+    list-style: none;
+    font-size: small;
+    font-weight: bold;
+    color:#7db121;
 }
 
-.card-title-pg-2 {
-    font-size: small !important;
-    font-weight: bold !important;
-    color:#7db121 !important;
+.card-title-pg-2 li{
+    list-style: none;
+    font-size: small;
+    font-weight: bold;
+    color:#7db121;
 }
 
-.card-title-pg-3 {
-    font-size: small !important;
-    font-weight: bold !important;
-    color:#7db121 !important;
+.card-title-pg-3 li{
+    list-style: none;
+    font-size: small;
+    font-weight: bold;
+    color:#7db121;
 }
 
-.card-title-pg-4 {
-    font-size: small !important;
-    font-weight: bold !important;
-    color:#7db121 !important;
+.card-title-pg-4 li{
+    list-style: none;
+    font-size: small;
+    font-weight: bold;
+    color:#7db121;
 }
 
 
@@ -245,7 +249,7 @@ body {
     color:#7db121
 }
 
-.header-span {
+.carousel-caption h6 {
     color: white;
     font-size: 20px;
 }

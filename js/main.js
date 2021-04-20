@@ -28,12 +28,6 @@ $('.card-text-pg-3:last').load('https://aaalyo.github.io/Final-project/nala.html
 $('.card-text-pg-4:first').load('https://aaalyo.github.io/Final-project/orangey.html p');
 
 
-
-$('.card-image:first').load('https://aaalyo.github.io/Final-project/hamilton.html .image-load(src)');
-
-
-
-
 $('.chat-send').click(function (event) {
     event.preventDefault();
     const username = $('#username').val();
@@ -42,9 +36,6 @@ $('.chat-send').click(function (event) {
     let options = {
         weekday: "long", year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit"
     };
-    
-
-   
 
     if (username === '') {
         alert('Please enter your name');
@@ -62,69 +53,54 @@ $('.chat-send').click(function (event) {
      <p class="text-break m-0">${message}</p>  
     </li>`;
 
-
-
     $('.chat-field').append(newListElement);
     $('#username').val('');
     $('#message').val('');
+});
 
 
-
+$('#register').submit(function (event) {
+    if ($('#password1').val() !== $('#password2').val()) {
+        alert('Passwords do not match!');
+        event.preventDefault();
+    };
 });
 
 
 
-
-
-$('#register').submit(function (event) {
-
-    if ($('#username').val() === '') {
-
-        $('.please-enter').html('Please enter username!');
-        event.preventDefault();
-    };
-
-    if ($('#password1').val() === '') {
-
-        $('.please-enter').html('Please enter password!');
-        event.preventDefault();
-    };
-
-    if ($('#password2').val() === '') {
-
-        $('.please-enter').html('Please retype password!');
-        event.preventDefault();
-    };
-
-    if ($('#password1').val() !== $('#password2').val()) {
-
-        $('.please-enter').html('Passwords do not match!');
-        event.preventDefault();
-    };
-
-    if ($('#fname').val() === '') {
-
-        $('.please-enter').html('Please enter your name!');
-        event.preventDefault();
-    };
-
-    if ($('#country-select').val() === '') {
-
-        $('.please-enter').html('Please please select country!');
-        event.preventDefault();
-    };
-
-    if ($('#checkbox:checked').length === 0) {
-
-        $('.please-enter').html('Please read the terms and conditions!');
-        event.preventDefault();
-    };
-
-
-
-
-})
-
+function timeSince(date) {
+date = $('.date-updated').html();
+console.log(date);
+    var seconds = Math.floor((new Date() - date) / 1000);
+    
+  
+    var interval = seconds / 31536000;
+  
+    if (interval > 1) {
+      return Math.floor(interval) + " years";
+    }
+    interval = seconds / 2592000;
+    if (interval > 1) {
+      return Math.floor(interval) + " months";
+    }
+    interval = seconds / 86400;
+    if (interval > 1) {
+      return Math.floor(interval) + " days";
+    }
+    interval = seconds / 3600;
+    if (interval > 1) {
+      return Math.floor(interval) + " hours";
+    }
+    interval = seconds / 60;
+    if (interval > 1) {
+      return Math.floor(interval) + " minutes";
+    }
+    return Math.floor(seconds) + " seconds";
+  }
+  var aDay = 24*60*60*1000;
+  console.log(timeSince(new Date(Date.now()-aDay)));
+  console.log(timeSince(new Date(Date.now()-aDay*2)));
+  $('.text-muted').html(timeSince(new Date(Date.now()-aDay*2)) + ' ago');
 
 
 

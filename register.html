@@ -61,26 +61,25 @@
     </div>
 
     <div class="row container mw-100 d-flex justify-content-center">
-
       <form id="register" class="col">
         <div class="header m-3 ">Register</div>
-        <div class="m-3">
-          <input placeholder="Username *" type="text" name="username"  id="username">
+        <div class="m-3 input-group">
+          <input class="form-control" placeholder="Username *" type="text" name="username"  id="username" required>
         </div>
-        <div class="m-3">
-          <input placeholder="Password *" type="password" name="password" id="password1">
+        <div class="m-3 input-group">
+          <input class="form-control" placeholder="Password *" type="password" name="password" id="password1" required>
         </div>
-        <div class="m-3">
-          <input placeholder="Retype password *" type="password" id="password2">
+        <div class="m-3 input-group">
+          <input class="form-control" placeholder="Retype password *" type="password" id="password2" required>
         </div>
-        <div class="m-3">
-          <input placeholder="First name *" type="text" name="name" id="fname">
+        <div class="m-3 input-group">
+          <input class="form-control" placeholder="First name *" type="text" name="name" id="fname" required>
         </div>
-        <div class="m-3">
-          <input placeholder="Last name" type="text" name="name">
+        <div  class="m-3 input-group">
+          <input class="form-control" placeholder="Last name" type="text" name="name">
         </div>
-        <div class="m-3">
-          <select name="country" id="country-select">
+        <div class="m-3 input-group">
+          <select class="form-control" name="country" id="country-select" required>
             <option value="">Country</option>
             <option value="LV">Latvia</option>
             <option value="LT">Lithuania</option>
@@ -95,22 +94,18 @@
             <option value="GL">Rest of the world</option>
           </select>
         </div>
-        <div class="m-3">
-          <input type="checkbox" name="checkbox" id="checkbox">
-          <label for="checkbox">Agree with terms and conditions *</label>
+        <div class="m-3 input-group">
+          <input type="checkbox" name="checkbox" id="checkbox" required>
+          <label class="ms-3" for="checkbox">Agree with terms and conditions *</label>
         </div>
         
-        <div>
+        <div class="m-3 input-group">
           <input class="m-3 btn btn-primary" type="submit" value="Register">
         </div>
         
 
       </form>
-      <div>
-        <p class="text-danger please-enter">
-
-        </p>
-      </div>
+     
       
 
     </div>

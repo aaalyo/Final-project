@@ -229,4 +229,20 @@ body {
     box-shadow: #deb666;
 }
 
+.date-updated-card-1 {
+    display:none;
+}
+
+.date-updated-card-2 {
+    display:none;
+}
+
+.date-updated-card-3 {
+    display:none;
+}
+
+.breadcrumb-item.active {
+    color:#7db121
+}
+
 

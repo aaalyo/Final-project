@@ -1,17 +1,17 @@
 
-$('.card-title:first').load('https://aaalyo.github.io/Final-project/bob.html h6');
-$('.card-title:nth(1)').load('https://aaalyo.github.io/Final-project/cole-marmalade.html h6');
-$('.card-title:last').load('https://aaalyo.github.io/Final-project/hamilton.html h6');
+$('.card-title:first').load('https://aaalyo.github.io/Final-project/bob.html li.active');
+$('.card-title:nth(1)').load('https://aaalyo.github.io/Final-project/cole-marmalade.html li.active');
+$('.card-title:last').load('https://aaalyo.github.io/Final-project/hamilton.html li.active');
 
-$('.card-title-pg-2:first').load('https://aaalyo.github.io/Final-project/colonel-meow.html h6');
-$('.card-title-pg-2:nth(1)').load('https://aaalyo.github.io/Final-project/garfi.html h6');
-$('.card-title-pg-2:last').load('https://aaalyo.github.io/Final-project/grumpy.html h6');
+$('.card-title-pg-2:first').load('https://aaalyo.github.io/Final-project/colonel-meow.html li.active');
+$('.card-title-pg-2:nth(1)').load('https://aaalyo.github.io/Final-project/garfi.html li.active');
+$('.card-title-pg-2:last').load('https://aaalyo.github.io/Final-project/grumpy.html li.active');
 
-$('.card-title-pg-3:first').load('https://aaalyo.github.io/Final-project/lil-bub.html h6');
-$('.card-title-pg-3:nth(1)').load('https://aaalyo.github.io/Final-project/maru.html h6');
-$('.card-title-pg-3:last').load('https://aaalyo.github.io/Final-project/nala.html h6');
+$('.card-title-pg-3:first').load('https://aaalyo.github.io/Final-project/lil-bub.html li.active');
+$('.card-title-pg-3:nth(1)').load('https://aaalyo.github.io/Final-project/maru.html li.active');
+$('.card-title-pg-3:last').load('https://aaalyo.github.io/Final-project/nala.html li.active');
 
-$('.card-title-pg-4:first').load('https://aaalyo.github.io/Final-project/orangey.html h6');
+$('.card-title-pg-4:first').load('https://aaalyo.github.io/Final-project/orangey.html li.active');
 
 $('.card-text:first').load('https://aaalyo.github.io/Final-project/bob.html p');
 $('.card-text:nth(1)').load('https://aaalyo.github.io/Final-project/cole-marmalade.html p');
@@ -98,23 +98,22 @@ function timeSince(date) {
 }
 
 var aDay = 24 * 60 * 60 * 1000;
-console.log(timeSince(new Date(Date.now() - aDay)));
-console.log(timeSince(new Date(Date.now() - aDay * 2)));
 
-$('.date-updated-card-1').load('https://aaalyo.github.io/Final-project/bob.html h5');
-date1 = $('.date-updated-card-1').html();
-$('.text-muted-card-1').html(timeSince(date1) + ' ago');
-console.log(timeSince(date1))
+$('.date-loaded-card-1').load('https://aaalyo.github.io/Final-project/bob.html h5', function() {
+    date1 = $('.date-updated-card-1').html();
+    console.log(date1);
+    $('.text-muted-card-1').html('Last updated ' + timeSince(date1) + ' ago');
+});
 
+$('.date-loaded-card-2').load('https://aaalyo.github.io/Final-project/cole-marmalade.html h5', function() {
+    date2 = $('.date-updated-card-2').html();
+    console.log(date2);
+    $('.text-muted-card-2').html('Last updated ' + timeSince(date2) + ' ago');
+});
 
-$('.date-loaded-card-2').load('https://aaalyo.github.io/Final-project/cole-marmalade.html h5');
-date2 = $('.date-loaded-card-2').html();
-$('.text-muted-card-2').html(timeSince(date2) + ' ago');
-
-$('.date-loaded-card-3').load('https://aaalyo.github.io/Final-project/hamilton.html h5');
-date3 = $('.date-loaded-card-3').html();
-$('.text-muted-card-3').html(timeSince(date3) + ' ago');
-
-
-
+$('.date-loaded-card-3').load('https://aaalyo.github.io/Final-project/hamilton.html h5', function() {
+    date3 = $('.date-updated-card-3').html();
+    console.log(date3);
+    $('.text-muted-card-3').html('Last updated ' + timeSince(date3) + ' ago');
+});
 

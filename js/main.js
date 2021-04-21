@@ -3,6 +3,16 @@ $('.card-image:first').load('https://aaalyo.github.io/Final-project/bob.html img
 $('.card-image:nth(1)').load('https://aaalyo.github.io/Final-project/cole-marmalade.html img.load');
 $('.card-image:last').load('https://aaalyo.github.io/Final-project/hamilton.html img.load');
 
+$('.card-image-pg-2:first').load('https://aaalyo.github.io/Final-project/colonel-meow.html img.load');
+$('.card-image-pg-2:nth(1)').load('https://aaalyo.github.io/Final-project/garfi.html img.load');
+$('.card-image-pg-2:last').load('https://aaalyo.github.io/Final-project/grumpy.html img.load');
+
+$('.card-image-pg-3:first').load('https://aaalyo.github.io/Final-project/lil-bub.html img.load');
+$('.card-image-pg-3:nth(1)').load('https://aaalyo.github.io/Final-project/maru.html img.load');
+$('.card-image-pg-3:last').load('https://aaalyo.github.io/Final-project/nala.html img.load');
+
+$('.card-image-pg-4:last').load('https://aaalyo.github.io/Final-project/orangey.html img.load');
+
 
 
 $('.card-title:first').load('https://aaalyo.github.io/Final-project/bob.html li.active');
@@ -78,7 +88,7 @@ $('.chat-send').click(function (event) {
     };
 
     const newListElement = `
-    <li class="chat-message alert alert-warning p-1 mt-3 me-3"> 
+    <li class="chat-message shadow-sm alert alert-warning p-1 mt-3 me-3"> 
      <span class="card-title m-0">${username}</span> 
      <span class="card-text text-secondary" id="datetime">at ${date.toLocaleString(options)}</span>
      <p class="text-break m-0">${message}</p>  
@@ -148,7 +158,7 @@ $('.date-loaded-card-3').load('https://aaalyo.github.io/Final-project/hamilton.h
 
 
 function myMap() {
-    var mapProp = {
+    let mapProp = {
         center: new google.maps.LatLng(56.959514, 24.239138),
         zoom: 17,
     };

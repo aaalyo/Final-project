@@ -44,6 +44,10 @@ body {
     
   }
 
+  .btn-outline-dark:focus {
+    box-shadow: none;
+  }
+
 
   .nav-bottom-1 {
     background-color:#ded3b7
@@ -218,20 +222,23 @@ body {
 }
 
 
-.btn-primary {
+.btn-warning {
     background-color: #7db121;
     border-color: #7db121;
+    color:white;
 }
 
-.btn-primary:hover {
+.btn-warning :hover {
     background-color: #98d82a;
     border-color: #7db121;
+    color:white;
 }
 
-.btn-primary:focus {
+.btn-warning:focus {
     background-color: #98d82a;
     border-color: #7db121;
     box-shadow: #deb666;
+    color:white;
 }
 
 .date-updated-card-1 {

@@ -228,13 +228,20 @@ body {
     color:white;
 }
 
-.btn-warning :hover {
+.btn-warning:hover {
     background-color: #98d82a;
     border-color: #7db121;
     color:white;
 }
 
 .btn-warning:focus {
+    background-color: #98d82a;
+    border-color: #7db121;
+    box-shadow: #deb666;
+    color:white;
+}
+
+.btn-warning:active {
     background-color: #98d82a;
     border-color: #7db121;
     box-shadow: #deb666;

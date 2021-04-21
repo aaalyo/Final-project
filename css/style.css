@@ -274,3 +274,10 @@ body {
     font-size:xx-small;
 }
 
+.map {
+    position: inherit;
+}
+
+.container-merch {
+    width:fit-content;
+}
